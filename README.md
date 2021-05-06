@@ -12,9 +12,10 @@ I made a simple calculator using HTML5 and CSS.
 I made this calculator in the 4th sem of my college B.tech journey.
 This calculator can do the following operations:
 
-Addition: "+" operator to add
-Subtraction: "-" operator to subtract
-Multiplication: "x" to multiply
-Division: "/" to divide
-Clear: "C" to clear
+Addition: "+" operator to add.
+Subtraction: "-" operator to subtract.
+Multiplication: "x" to multiply.
+Division: "/" to divide.
+Clear: "C" to clear.
+Equal: "=" to display result on screen.
 
