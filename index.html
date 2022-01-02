@@ -8,12 +8,13 @@
     <title>Simple Calculator by Vedshruti</title>
     <link rel="stylesheet" href="calc.css">
     <style>
+
         #container {
-            margin-left: 500px;
-            margin-right: 500px;
+            margin-left:auto;
         }
 
         .container {
+            display: flex;
             text-align: center;
         }
 
@@ -24,7 +25,7 @@
         }
 
         .button {
-            width: 16%;
+            width: 20%;
             height: 12vh;
             border-radius: 5%;
             border-top-left-radius: 35%;
@@ -46,16 +47,34 @@
         }
 
         .box {
-            margin-left: auto;
-            margin-right: auto;
+            display:flex;
+            margin-left:auto ;
+            margin-right:auto;
             background-color: rgb(15, 8, 78);
             border-radius: 10%;
             border: ridge;
+
         }
 
         .shape {
-            width: 70%;
+            width: 79%;
             height: 6vh;
+        }
+
+        .size{
+            width:390px;
+        }
+        @media only screen and (max-width:480px)
+        {
+            .box{
+                padding: 10px;
+            }
+            .container{
+                margin:10px;
+            }
+            .size{
+                width:100%;
+            }
         }
     </style>
 </head>
@@ -64,9 +83,9 @@
     <h1 style="text-align: center"><span style="color: rgb(82, 47, 65);font-weight: 1000;">SIMPLE CALCULATOR</span></h1>
     <div class="container text ">
         <fieldset id="container" class="box">
-            <form name="calculator" class="text">
+            <form name="calculator" class="text size">
                 <h4 style="text-align: right;color: rgb(155, 155, 155);
-                margin-right: 68px;font-family: Verdana, Geneva, Tahoma, sans-serif;">FABIO </h4>
+                margin-right: 35px;font-family: Verdana, Geneva, Tahoma, sans-serif;">FABIO </h4>
 
                 <input id="display" name="display" class="shape text" style="background-image:linear-gradient(rgb(227, 236, 227),white);" readonly>
                 <br>
