@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Vedshruti Sarkar">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Simple Calculator by Vedshruti</title>
+    <link rel="stylesheet" href="calc.css">
+    <style>
+
+        #container {
+            margin-left:auto;
+        }
+
+        .container {
+            display: flex;
+            text-align: center;
+        }
+
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .button {
+            width: 20%;
+            height: 12vh;
+            border-radius: 5%;
+            border-top-left-radius: 35%;
+            border-top-right-radius: 35%;
+            border-bottom-left-radius: 35%;
+            border-bottom-right-radius: 35%;
+            margin-bottom: 5px;
+            border-style: ridge;
+            border-color: silver;
+            background-image: linear-gradient(grey, honeydew);
+        }
+
+        .button:hover {
+            background-color: rgb(199, 195, 183);
+            color: rgb(36, 15, 15);
+            font-weight: bold;
+            font-size: 21px;
+            border-color: rgb(190, 181, 181);
+        }
+
+        .box {
+            display:flex;
+            margin-left:auto ;
+            margin-right:auto;
+            background-color: rgb(15, 8, 78);
+            border-radius: 10%;
+            border: ridge;
+
+        }
+
+        .shape {
+            width: 79%;
+            height: 6vh;
+        }
+
+        .size{
+            width:390px;
+        }
+        @media only screen and (max-width:480px)
+        {
+            .box{
+                padding: 10px;
+            }
+            .container{
+                margin:10px;
+            }
+            .size{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center"><span style="color: rgb(82, 47, 65);font-weight: 1000;">SIMPLE CALCULATOR</span></h1>
+    <div class="container text ">
+        <fieldset id="container" class="box">
+            <form name="calculator" class="text size">
+                <h4 style="text-align: right;color: rgb(155, 155, 155);
+                margin-right: 35px;font-family: Verdana, Geneva, Tahoma, sans-serif;">FABIO </h4>
+
+                <input id="display" name="display" class="shape text" style="background-image:linear-gradient(rgb(227, 236, 227),white);" readonly>
+                <br>
+                <br>
+
+                <input class="button digits text" type="button" value="7" onclick="calculator.display.value += '7'">
+                <input class="button digits text" type="button" value="8" onclick="calculator.display.value += '8'">
+                <input class="button digits text" type="button" value="9" onclick="calculator.display.value += '9'">
+                <input class="button mathButtons text" type="button" value="+" onclick="calculator.display.value += '+'">
+                <br>
+
+                <input class="button digits text" type="button" value="4" onclick="calculator.display.value += '4'">
+                <input class="button digits text" type="button" value="5" onclick="calculator.display.value += '5'">
+                <input class="button mathButtons text" type="button" value="6" onclick="calculator.display.value += '6'">
+                <input class="button mathButtons text" type="button" value="-" onclick="calculator.display.value += '-'">
+                <br>
+
+                <input class="button digits text" type="button" value="1" onclick="calculator.display.value += '1'">
+                <input class="button digits text" type="button" value="2" onclick="calculator.display.value += '2'">
+                <input class="button digits text" type="button" value="3" onclick="calculator.display.value += '3'">
+                <input class="button mathButtons text" type="button" value="&times" onclick="calculator.display.value += '*'">
+                <br>
+
+                <input id="clearButton" class="button text" type="button" value="C" onclick="calculator.display.value = ''">
+                <input class="button digits text" type="button" value="0" onclick="calculator.display.value += '0'">
+                <input class="button mathButtons text" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+                <input class="button mathButtons text" type="button" value="/" onclick="calculator.display.value += '/'">
+                <br>
+                <br>
+
+            </form>
+        </fieldset>
+    </div>
+    <br><br>
+    <footer style="font-size:18px;color: rgb(131, 31, 31); background-color: silver; text-align: center; height: auto;">Author: Vedshruti Sarkar | ©Academy of Technology</footer>
+</body>
+
+</html>
